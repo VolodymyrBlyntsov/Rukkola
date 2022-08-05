@@ -1,16 +1,12 @@
+$blue: #7c5dfa;
+$light-white: #ddd;
+
 .container {
     max-width: 1140px;
     margin-left: 15px;
     margin-right: 15px;
     margin: auto;
 }
-
-.search__panel {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
 
 .job__list__wrapper {
     padding: 30px;
@@ -19,20 +15,57 @@
     border-radius: 15px;
 }
 
+.search__panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .search__panel-01 {
+        padding: 15px 25px;
+        width: 340px;
+    }
+    
+    .search__panel-02 {
+        padding: 10px 25px;
+    }
+    
+    .search__panel-03 select {
+        padding: 15px 25px;
+        border: 1px solid $light-white;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
 .search__panel-01, .search__panel-02 {
     display: flex;
     align-items: center;
     column-gap: 0.8rem;
+    border: 1px solid $light-white;
     border-radius: 5px;
+    outline: none;
 }
 
 .btn {
-    background: #7c5dfa;
+    background: $blue;
     padding: 7px 25px;
     border: none;
     outline: none;
-    color: #fff;
+    color: white;
     font-size: 0.9rem;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.search__panel-01 input, .search__panel-02 input {
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 0.9rem;
+}
+
+.search__panel-01 span i, .search__panel-02 span i {
+    color: $blue; 
 }

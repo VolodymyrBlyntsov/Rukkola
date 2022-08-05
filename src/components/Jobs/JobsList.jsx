@@ -11,7 +11,7 @@ const JobsList = () => {
               <span>
                 <i class="ri-search-line"></i>
               </span>
-              <input type="text" placeholder='Search by title, companies' />
+              <input type="text" placeholder='Search by title or companies' />
             </div>
             <div className="search__panel-02">
               <span>
@@ -20,7 +20,7 @@ const JobsList = () => {
               <input type="text" placeholder='Search by location' />
               <button className='btn'>Search</button>
             </div>
-            <div className="search__panel__-03">
+            <div className="search__panel-03">
               <select>
                 <option> Filter job by </option>
                 <option value="full-time"> Full Time </option>
