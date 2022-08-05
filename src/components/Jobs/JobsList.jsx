@@ -1,4 +1,5 @@
 import React from 'react';
+import './JobList.scss';
 
 const JobsList = () => {
   return (
@@ -17,7 +18,7 @@ const JobsList = () => {
                 <i class="ri-map-pin-2-line"></i>
               </span>
               <input type="text" placeholder='Search by location' />
-              <button>Search</button>
+              <button className='btn'>Search</button>
             </div>
             <div className="search__panel__-03">
               <select>
