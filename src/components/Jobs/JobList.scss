@@ -1,5 +1,7 @@
 $blue: #7c5dfa;
 $light-white: #ddd;
+$light-grey: #777;
+$black: #000;
 
 .container {
     max-width: 1140px;
@@ -62,10 +64,57 @@ $light-white: #ddd;
 .search__panel-01 input, .search__panel-02 input {
     border: none;
     outline: none;
-    color: black;
+    color: $black;
     font-size: 0.9rem;
 }
 
 .search__panel-01 span i, .search__panel-02 span i {
     color: $blue; 
+}
+
+.job__wrapper {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.job__item {
+    width: 350px;
+    margin-bottom: 50px;
+
+    img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+}
+
+.job__content {
+    h6 {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: $light-grey;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+.location {
+    p {
+        margin-top: 5px;
+
+        span {
+            color: $blue;
+        }
+    }    
 }

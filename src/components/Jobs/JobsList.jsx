@@ -11,13 +11,13 @@ const JobsList = () => {
           <div className="search__panel">
             <div className="search__panel-01">
               <span>
-                <i class="ri-search-line"></i>
+                <i className="ri-search-line"></i>
               </span>
               <input type="text" placeholder='Search by title or companies' />
             </div>
             <div className="search__panel-02">
               <span>
-                <i class="ri-map-pin-2-line"></i>
+                <i className="ri-map-pin-2-line"></i>
               </span>
               <input type="text" placeholder='Search by location' />
               <button className='btn'>Search</button>
@@ -37,12 +37,12 @@ const JobsList = () => {
         <div className="job__wrapper">
           {
             jobs.map(item => 
-              <div className="job__item" mey={item.id}>
+              <div className="job__item" key={item.id}>
                 <img src={item.logo} alt="company_logo" />
                 <div className="job__content">
                   <h6> {item.postedAt} - {item.contract} </h6>
                   <h1><Link to={`/jobs/${item.position}`}>{item.position}</Link></h1>
-                  <p> {item.location} </p>
+                  <p> {item.company} </p>
                   <div className="location">
                     <p>
                       Location: <span> {item.location} </span>
