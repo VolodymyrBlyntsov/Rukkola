@@ -1,7 +1,7 @@
 const jobs = [
   {
     id: 1,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Photosnap",
     logo: "companys/photosnap.svg",
     position: "Senior Frontend Developer",
@@ -35,7 +35,7 @@ const jobs = [
   },
   {
     id: 2,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Manage",
     logo: "companys/manage.svg",
     position: "Fullstack Developer",
@@ -69,7 +69,7 @@ const jobs = [
   },
   {
     id: 3,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Account",
     logo: "companys/account.svg",
     position: "Junior Frontend Developer",
@@ -103,7 +103,7 @@ const jobs = [
   },
   {
     id: 4,
-    companySite: "#",
+    companySite: "/jobs",
     company: "MyHome",
     logo: "companys/myhome.svg",
     position: "Desktop Support Manager",
@@ -137,7 +137,7 @@ const jobs = [
   },
   {
     id: 5,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Loop Studios",
     logo: "companys/loop-studios.svg",
     position: "Remote DevOps Engineer",
@@ -171,7 +171,7 @@ const jobs = [
   },
   {
     id: 6,
-    companySite: "#",
+    companySite: "/jobs",
     company: "FaceIt",
     logo: "companys/faceit.svg",
     position: "Senior Application Engineer",
@@ -205,7 +205,7 @@ const jobs = [
   },
   {
     id: 7,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Shortly",
     logo: "companys/shortly.svg",
     position: "Technical Lead Engineer",
@@ -239,7 +239,7 @@ const jobs = [
   },
   {
     id: 8,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Insure",
     logo: "companys/insure.svg",
     position: "App and Website Designer",
@@ -273,7 +273,7 @@ const jobs = [
   },
   {
     id: 9,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Eyecam Co.",
     logo: "companys/eyecam-co.svg",
     position: "IOS Engineer",
@@ -307,8 +307,8 @@ const jobs = [
   },
   {
     id: 10,
-    companySite: "#",
-    company: "The Air Filter Company",
+    companySite: "/jobs",
+    company: "Air Interest",
     logo: "companys/the-air-filter-company.svg",
     position: "Front-end Dev",
     postedAt: "1mo ago",
@@ -341,7 +341,7 @@ const jobs = [
   },
   {
     id: 11,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Account",
     logo: "companys/account.svg",
     position: "Junior Frontend Developer",
@@ -375,7 +375,7 @@ const jobs = [
   },
   {
     id: 12,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Manage",
     logo: "companys/manage.svg",
     position: "Fullstack Developer",
@@ -409,7 +409,7 @@ const jobs = [
   },
   {
     id: 13,
-    companySite: "#",
+    companySite: "/jobs",
     company: "FaceIt",
     logo: "companys/faceit.svg",
     position: "Senior Application Engineer",
@@ -444,7 +444,7 @@ const jobs = [
   
   {
     id: 14,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Shortly",
     logo: "companys/shortly.svg",
     position: "Technical Lead Engineer",
@@ -478,7 +478,7 @@ const jobs = [
   },
   {
     id: 15,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Photosnap",
     logo: "companys/photosnap.svg",
     position: "Senior Frontend Developer",
@@ -512,7 +512,7 @@ const jobs = [
   },
   {
     id: 16,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Loop Studios",
     logo: "companys/loop-studios.svg",
     position: "Remote DevOps Engineer",
@@ -546,8 +546,8 @@ const jobs = [
   },
   {
     id: 17,
-    companySite: "#",
-    company: "The Air Filter Company",
+    companySite: "/jobs",
+    company: "Air Interest",
     logo: "companys/the-air-filter-company.svg",
     position: "Front-end Dev",
     postedAt: "1mo ago",
@@ -580,7 +580,7 @@ const jobs = [
   },
   {
     id: 18,
-    companySite: "#",
+    companySite: "/jobs",
     company: "MyHome",
     logo: "companys/myhome.svg",
     position: "Desktop Support Manager",
@@ -614,7 +614,7 @@ const jobs = [
   },
   {
     id: 19,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Account",
     logo: "companys/account.svg",
     position: "Junior Frontend Developer",
@@ -648,7 +648,7 @@ const jobs = [
   },
   {
     id: 20,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Eyecam Co.",
     logo: "companys/eyecam-co.svg",
     position: "IOS Engineer",
@@ -682,7 +682,7 @@ const jobs = [
   },
   {
     id: 21,
-    companySite: "#",
+    companySite: "/jobs",
     company: "Insure",
     logo: "companys/insure.svg",
     position: "App and Website Designer",
