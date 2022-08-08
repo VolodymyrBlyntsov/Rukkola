@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 700px;
 }
 
 body {
@@ -20,4 +21,8 @@ p {
   color: #777;
   font-weight: 400;
   font-size: 0.9rem;
+} 
+
+::-webkit-scrollbar {
+  width: 0;
 }
