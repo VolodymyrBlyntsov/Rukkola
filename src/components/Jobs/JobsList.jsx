@@ -6,29 +6,33 @@ import { Link } from 'react-router-dom';
 const JobsList = () => {
 
   const [jobData, setJobData] = useState(jobs);
+  const [searchTerm, setSearchTerm] = useState('')
 
+  const searchTermValue = searchTerm.toLowerCase();
+
+  { /* Filter data by part-time, full-time, freelance and contract */}
   const filterJobData = (e) => {
-    const filterValue = e.target.value;
-    
-    if (filterValue === 'full-time') {
-      const filteredData = jobs.filter(job => job.contract === 'Full Time');
-      setJobData(filteredData)
-    } 
-    else if (filterValue === 'part-time') {
-      const filteredData = jobs.filter(job => job.contract === 'Part Time');
-      setJobData(filteredData)
-    }
-    else if (filterValue === 'freelance') {
-      const filteredData = jobs.filter(job => job.contract === 'Freelance');
-      setJobData(filteredData)
-    }
-    else if (filterValue === 'contract') {
-      const filteredData = jobs.filter(job => job.contract === 'Contract');
-      setJobData(filteredData);
-    }
-    else {
-      setJobData(jobs);
-    }
+      const filterValue = e.target.value;
+      
+      if (filterValue === 'full-time') {
+        const filteredData = jobs.filter(job => job.contract === 'Full Time');
+        setJobData(filteredData)
+      } 
+      else if (filterValue === 'part-time') {
+        const filteredData = jobs.filter(job => job.contract === 'Part Time');
+        setJobData(filteredData)
+      }
+      else if (filterValue === 'freelance') {
+        const filteredData = jobs.filter(job => job.contract === 'Freelance');
+        setJobData(filteredData)
+      }
+      else if (filterValue === 'contract') {
+        const filteredData = jobs.filter(job => job.contract === 'Contract');
+        setJobData(filteredData);
+      }
+      else {
+        setJobData(jobs);
+      }
     }
 
   return (
@@ -40,14 +44,14 @@ const JobsList = () => {
               <span>
                 <i className="ri-search-line"></i>
               </span>
-              <input type="text" placeholder='Search by title or companies' />
+              <input type="text" placeholder='Search by title or company' value={searchTerm} onChange={e => setSearchTerm(e.target.value)} />
             </div>
             <div className="search__panel-02">
               <span>
                 <i className="ri-map-pin-2-line"></i>
               </span>
               <input type="text" placeholder='Search by location' />
-              <button className='btn'>Search</button>
+              <button className='btn'> Search </button>
             </div>
             <div className="search__panel-03">
               <select onChange={filterJobData}>
@@ -63,7 +67,10 @@ const JobsList = () => {
 
         <div className="job__wrapper">
           {
-            jobData?.map(item => 
+            jobData?.filter(job => {
+              if(searchTerm === '') return job;
+              if (job.position.toLowerCase().includes(searchTermValue) || job.company.toLowerCase().includes(searchTermValue)) return job;
+              }).map(item => 
               <div className="job__item" key={item.id}>
                 <img src={item.logo} alt="company_logo" />
                 <div className="job__content">
