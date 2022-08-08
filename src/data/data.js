@@ -6,7 +6,7 @@ const jobs = [
     logo: "companys/photosnap.svg",
     position: "Senior Frontend Developer",
     postedAt: "1d ago",
-    contract: "Full Time",
+    contract: "Contract",
     location: "United State",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, reiciendis totam, magnam voluptatibus ut veniam harum voluptatem eaque ab tempora eius iusto dignissimos labore? Assumenda quam natus beatae sapiente repellat neque ea aspernatur cumque rem esse? Sapiente soluta repellat earum iusto nulla! Totam optio nobis laborum nemo tempora, quod fugiat.",
     requirements: {
@@ -483,7 +483,7 @@ const jobs = [
     logo: "companys/photosnap.svg",
     position: "Senior Frontend Developer",
     postedAt: "1d ago",
-    contract: "Full Time",
+    contract: "Freelance",
     location: "United State",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, reiciendis totam, magnam voluptatibus ut veniam harum voluptatem eaque ab tempora eius iusto dignissimos labore? Assumenda quam natus beatae sapiente repellat neque ea aspernatur cumque rem esse? Sapiente soluta repellat earum iusto nulla! Totam optio nobis laborum nemo tempora, quod fugiat.",
     requirements: {

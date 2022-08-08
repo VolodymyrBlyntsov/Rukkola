@@ -1,9 +1,36 @@
 import React, { useState } from 'react';
-import './JobList.scss';
 import jobs from '../../data/data';
+import './JobList.scss';
 import { Link } from 'react-router-dom';
 
 const JobsList = () => {
+
+  const [jobData, setJobData] = useState(jobs);
+
+  const filterJobData = (e) => {
+    const filterValue = e.target.value;
+    
+    if (filterValue === 'full-time') {
+      const filteredData = jobs.filter(job => job.contract === 'Full Time');
+      setJobData(filteredData)
+    } 
+    else if (filterValue === 'part-time') {
+      const filteredData = jobs.filter(job => job.contract === 'Part Time');
+      setJobData(filteredData)
+    }
+    else if (filterValue === 'freelance') {
+      const filteredData = jobs.filter(job => job.contract === 'Freelance');
+      setJobData(filteredData)
+    }
+    else if (filterValue === 'contract') {
+      const filteredData = jobs.filter(job => job.contract === 'Contract');
+      setJobData(filteredData);
+    }
+    else {
+      setJobData(jobs);
+    }
+    }
+
   return (
     <section className="job__list">
       <div className="container">
@@ -23,7 +50,7 @@ const JobsList = () => {
               <button className='btn'>Search</button>
             </div>
             <div className="search__panel-03">
-              <select>
+              <select onChange={filterJobData}>
                 <option> Filter job by </option>
                 <option value="full-time"> Full Time </option>
                 <option value="part-time"> Part Time </option>
@@ -36,7 +63,7 @@ const JobsList = () => {
 
         <div className="job__wrapper">
           {
-            jobs.map(item => 
+            jobData?.map(item => 
               <div className="job__item" key={item.id}>
                 <img src={item.logo} alt="company_logo" />
                 <div className="job__content">
