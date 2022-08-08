@@ -4,8 +4,17 @@
     line-height: 150px;
     background-color: #2E82FF;
     
-    h1 {
+    .siteBtn {
         margin-left: 30px;
+        background-color: #2E82FF;
+        border: none;
+        font-family: "Fredoka", sans-serif;
+        font-size: 2rem;    
+        
+        Link {
+            text-decoration: none;
+            color: white;
+        }
     }
 }
 
@@ -15,9 +24,10 @@
     margin-right: 15px;
     margin: auto;
 
-    h1 {
-        font-size: 1.8rem;
+    button {
+        font-size: 0.9rem;
         font-weight: 500;
         color: white;
+        font-family: "Fredoka", sans-serif;
     }
 }
