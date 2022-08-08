@@ -6,9 +6,16 @@ import { Link } from 'react-router-dom';
 const JobsList = () => {
 
   const [jobData, setJobData] = useState(jobs);
-  const [searchTerm, setSearchTerm] = useState('')
+  const [searchTerm, setSearchTerm] = useState('');
+  const [searchByLocation, setSearchByLocation] = useState('');
 
   const searchTermValue = searchTerm.toLowerCase();
+
+  { /* Filter data by location */}
+  const locationSearchHandler = () => {
+    const filteredData = jobs.filter(job => job.location.toLowerCase().includes(searchByLocation.toLowerCase()));
+    setJobData(filteredData);
+  }
 
   { /* Filter data by part-time, full-time, freelance and contract */}
   const filterJobData = (e) => {
@@ -50,8 +57,8 @@ const JobsList = () => {
               <span>
                 <i className="ri-map-pin-2-line"></i>
               </span>
-              <input type="text" placeholder='Search by location' />
-              <button className='btn'> Search </button>
+              <input type="text" placeholder='Search by location' value={searchByLocation} onChange={e => setSearchByLocation(e.target.value)} />
+              <button className='btn' onClick={locationSearchHandler}> Search </button>
             </div>
             <div className="search__panel-03">
               <select onChange={filterJobData}>
